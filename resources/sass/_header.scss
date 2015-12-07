@@ -1,0 +1,169 @@
+// header.scss
+
+.page-two {
+  // styling for page 2 in main.scss
+  .header {
+    background: #fffcf6;
+    display: inline-block;
+    position: relative; 
+    width: 100%;
+
+    a {
+      text-decoration: none;
+    }
+
+    @media screen and (min-width: 768px) {
+      animation: none;
+      height: 100%;
+      width: 25%;
+      position: absolute;
+      left: 0;
+      top: 0;
+    }
+    
+    &__logo {
+      display: none;
+
+      @media screen and (min-width: 768px) {
+        bottom: 2%;
+        left: 2%;
+        bottom: 2vh;
+        left: 2vh;
+        right: auto;
+        top: auto;
+        height: 10%;
+        height: 10vh;
+        width: auto;
+        display: block;
+        position: absolute;
+      }
+    }
+
+    nav {
+      display: none;
+
+      @media screen and (min-width: 768px) {
+        // display: inline-block;
+        // height: 100%;
+        // height: 100vh;
+        // margin-top: 10%;
+        // margin-top: 10vh;
+        width: 100%;
+        overflow-x: hidden;
+        position: absolute;
+        display: block;
+        top: 50%;
+        transform: translateY(-50%);
+      }
+
+      li {
+        margin-bottom: 9px;
+        border-left: 8px solid transparent;
+        transition: all 0.2s;
+
+        a {
+          width: 100%;
+        }
+
+        &:hover {
+          border-left: 8px solid rgba(0,0,0,0.2);
+        }
+
+        .dots {
+          display: none;
+          margin-left: 15px;
+          a {
+            display: inline-block;
+            margin: -2px 2px; 
+            width: 16px;
+            cursor: pointer;
+            // background-color: red;
+            margin-left: -3px;
+
+            span {
+              display: inline-block;
+              background-color: black;
+              width: 7px;
+              height: 7px;
+              border-radius: 10px;
+              box-shadow: 0 0 30px rgba(255,255,255,1);
+            }
+          }
+        }
+
+        &.active {
+          .dots {
+            display: block;
+          }
+        }
+
+        &.active.project-one {//,
+        // &.project-one:hover {
+          border-left: 8px solid darken( $project-one-main, 12%);
+        }
+
+        &.active.project-two {//,
+        //&.project-two:hover {
+          border-left: 8px solid darken( $project-two-main, 12%);
+        }
+
+        &.active.project-three {//,
+        //&.project-three:hover {
+          border-left: 8px solid darken( $project-three-main, 30%);
+        }
+
+        &.active.project-four {//,
+        //&.project-four:hover {
+          border-left: 8px solid darken( $project-four-main, 12%);
+        }
+
+        &.active.project-five {//,
+        //&.project-five:hover {
+          border-left: 8px solid darken( $project-five-main, 12%);
+        }
+
+        &.active.project-six {//,
+        //&.project-six:hover {
+          border-left: 8px solid darken( $project-six-main, 12%);
+        }  
+
+        &.active.project-seven {//,
+        //&.project-seven:hover {
+          border-left: 8px solid darken( $project-seven-main, 12%);
+        }
+
+        &.active.project-eight {//,
+        //&.project-eight:hover {
+          border-left: 8px solid darken( $project-eight-main, 12%);
+        }
+
+        &.active.project-nine {//,
+        //&.project-nine:hover {
+          border-left: 8px solid darken( $project-nine-main, 12%);
+        }
+
+        &.active.project-ten {//,
+        //&.project-ten:hover {
+          border-left: 8px solid darken( $project-ten-main, 12%);
+        }
+
+        &.active.project-eleven {//,
+        //&.project-eleven:hover {
+          border-left: 8px solid darken( $project-eleven-main, 12%);
+        }            
+      }
+
+      .no-border {
+        border-left: 0;
+
+        &:hover {
+          border-left: 0;
+        }
+
+        h2, a {
+          padding-left: 22px;
+        }
+      }
+    }
+  }
+}

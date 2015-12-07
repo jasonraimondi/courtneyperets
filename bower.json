@@ -1,0 +1,15 @@
+{
+  "name": "courtneyperets",
+  "description": "Courtney Perets Portfolio Site",
+  "authors": [
+    "Jason Raimondi <jason@raimondi.us>"
+  ],
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}

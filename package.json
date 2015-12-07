@@ -1,0 +1,17 @@
+{
+  "name": "courtneyperets",
+  "version": "1.0.0",
+  "description": "Courtney Perets Portfolio Site",
+  "private": true,
+  "devDependencies": {
+    "gulp": "^3.8.8"
+  },
+  "dependencies": {
+    "foundation-sites": "^6.0.0",
+    "gulp-imagemin": "^2.4.0",
+    "laravel-elixir-browsersync2": "^0.1.0",
+  "imagemin-pngquant": "^4.2.0",
+    "jquery": "^2.1.4",
+    "laravel-elixir": "^4.0.0"
+  }
+}
